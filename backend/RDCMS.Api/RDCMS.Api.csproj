@@ -10,11 +10,4 @@
       <ProjectReference Include="..\RDCMS.Application\RDCMS.Application.csproj" />
       <ProjectReference Include="..\RDCMS.Infrastructure\RDCMS.Infrastructure.csproj" />
     </ItemGroup>
-
-    <ItemGroup>
-      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.28">
-        <PrivateAssets>all</PrivateAssets>
-        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      </PackageReference>
-    </ItemGroup>
 </Project>
