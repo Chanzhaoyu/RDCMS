@@ -46,3 +46,7 @@ yarn-error.log*
 # OS generated files
 Thumbs.db
 ehthumbs.db
+
+# Agent
+claude.md
+agent.md
