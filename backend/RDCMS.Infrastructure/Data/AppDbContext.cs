@@ -10,6 +10,7 @@ public class AppDbContext : DbContext
     }
 
     public DbSet<User> Users => Set<User>();
+    public DbSet<RefreshToken> RefreshTokens => Set<RefreshToken>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -34,6 +35,13 @@ public class AppDbContext : DbContext
             e.Property(u => u.Username).HasMaxLength(100);
             e.HasIndex(u => u.Username).IsUnique();
             e.HasQueryFilter(u => !u.IsDeleted);
+        });
+
+        modelBuilder.Entity<RefreshToken>(e =>
+        {
+            e.Property(rt => rt.TokenHash).HasMaxLength(100);
+            e.HasIndex(rt => rt.TokenHash).IsUnique();
+            e.HasQueryFilter(rt => !rt.IsDeleted);
         });
     }
 }

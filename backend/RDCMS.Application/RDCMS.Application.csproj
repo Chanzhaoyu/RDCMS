@@ -6,4 +6,20 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+        <ProjectReference Include="..\RDCMS.Common\RDCMS.Common.csproj"/>
+        <ProjectReference Include="..\RDCMS.Domain\RDCMS.Domain.csproj"/>
+        <ProjectReference Include="..\RDCMS.Infrastructure\RDCMS.Infrastructure.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="HtmlSanitizer" Version="9.0.892"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.13"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="8.0.2"/>
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.2"/>
+        <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.1"/>
+        <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.2"/>
+        <PackageReference Include="Scrutor" Version="6.0.1"/>
+        <PackageReference Include="SixLabors.ImageSharp" Version="3.1.12"/>
+    </ItemGroup>
 </Project>
